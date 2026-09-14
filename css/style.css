@@ -126,32 +126,42 @@ img {
 }
 
 .brand img {
-  width: 112px;
-  height: 112px;
+  width: 134px;
+  height: 134px;
   object-fit: contain;
+  transform: scale(1.2);
+  transform-origin: center;
 }
 
 .brand-text {
   display: flex;
   flex-direction: column;
   line-height: 1;
+  gap: 0.18rem;
 }
 
 .brand-name {
   font-family: 'Baloo 2', cursive;
-  font-size: clamp(1.5rem, 2vw, 2.1rem);
+  font-size: clamp(1.55rem, 2.2vw, 2.3rem);
   color: #f4d67d;
   letter-spacing: 0.01em;
   text-transform: none;
   text-shadow: 0 8px 18px rgba(244, 214, 125, 0.25);
 }
 
-.brand-text small {
+.brand-text small,
+.brand-tagline {
   color: #e7f7e8;
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.brand-tagline {
+  color: #f5d77a;
+  letter-spacing: 0.14em;
+  font-size: 0.64rem;
 }
 
 .main-nav {
