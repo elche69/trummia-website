@@ -228,7 +228,7 @@ img {
   align-items: center;
   background-image:
     linear-gradient(120deg, rgba(7, 22, 13, 0.58), rgba(25, 72, 33, 0.42), rgba(17, 48, 26, 0.68)),
-    url('../../Hình Ảnh/pmFXLC491xEJIXIAZFWxGaLWFKRdMfXLQp2SAJJ6_-7gG_UejyAqqlJU1uKX9Mcxx1wO5tcK44OyidoN6htnM2CisjDdhhOVG0fM2pM9gxvd_sPcecf5pQXGER6u3F2yvhBWFanYyHXD7CApB1yygMlx9606imzET6CjlCiN_B6-zE0iJ9gzVOlv7ySRCWvA.jpg');
+    url('../assets/hero/hero-bg.jpg');
   background-size: cover;
   background-position: center center;
   box-shadow: inset 0 -18px 28px rgba(9, 26, 16, 0.22);
