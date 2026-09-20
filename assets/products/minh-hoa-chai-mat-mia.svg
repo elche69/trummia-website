@@ -1,0 +1,55 @@
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Minh họa chai Mật Mía Trùm Mía</title>
+  <desc id="desc">Chai PET trong chứa mật mía màu nâu hổ phách, nhãn vàng xanh và thân mía trang trí.</desc>
+  <defs>
+    <linearGradient id="bg" x1="80" y1="70" x2="820" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F5D9"/>
+      <stop offset="1" stop-color="#E5F0D9"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="290" y1="180" x2="610" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4FFF0" stop-opacity=".86"/>
+      <stop offset=".45" stop-color="#BBDCC4" stop-opacity=".52"/>
+      <stop offset="1" stop-color="#77A887" stop-opacity=".72"/>
+    </linearGradient>
+    <linearGradient id="molasses" x1="350" y1="440" x2="550" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B8782F"/>
+      <stop offset=".42" stop-color="#7B431D"/>
+      <stop offset="1" stop-color="#492314"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="330" y1="420" x2="570" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE47A"/>
+      <stop offset="1" stop-color="#DCA817"/>
+    </linearGradient>
+    <filter id="shadow" x="180" y="100" width="560" height="730" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#244B24" flood-opacity=".2"/>
+    </filter>
+  </defs>
+  <rect width="900" height="900" rx="42" fill="url(#bg)"/>
+  <circle cx="160" cy="150" r="92" fill="#F5C518" fill-opacity=".24"/>
+  <circle cx="760" cy="710" r="130" fill="#4CAF50" fill-opacity=".12"/>
+  <path d="M144 780C202 685 214 557 202 385" stroke="#2D7A2D" stroke-width="20" stroke-linecap="round"/>
+  <path d="M198 516C129 471 105 416 99 352C167 368 210 414 210 482" fill="#4C9A43"/>
+  <path d="M207 632C281 587 304 529 302 456C230 470 199 527 198 600" fill="#3E8739"/>
+  <path d="M758 796C697 692 685 562 699 382" stroke="#2D7A2D" stroke-width="20" stroke-linecap="round"/>
+  <path d="M696 514C764 471 790 416 798 352C731 367 686 414 687 482" fill="#4C9A43"/>
+  <path d="M694 634C624 589 598 530 601 456C672 471 703 527 704 602" fill="#3E8739"/>
+  <g filter="url(#shadow)">
+    <path d="M365 174H535V288L579 337V704C579 758 545 791 495 791H405C355 791 321 758 321 704V337L365 288V174Z" fill="url(#glass)" stroke="#2D7A2D" stroke-width="8"/>
+    <path d="M365 174H535V239H365V174Z" fill="#F5C518" stroke="#1A4A1A" stroke-width="8"/>
+    <path d="M359 151H541V185H359V151Z" fill="#D9A814" stroke="#1A4A1A" stroke-width="8"/>
+    <path d="M369 138H531V157H369V138Z" fill="#2D7A2D"/>
+    <path d="M329 495C382 478 515 480 571 497V704C571 752 540 781 492 781H408C360 781 329 752 329 704V495Z" fill="url(#molasses)"/>
+    <path d="M329 495C388 512 513 514 571 497" stroke="#3D1D12" stroke-width="7"/>
+    <path d="M348 348H552V604H348V348Z" fill="url(#gold)" stroke="#1A4A1A" stroke-width="7"/>
+    <path d="M370 382C390 363 419 354 450 354C481 354 510 363 530 382" stroke="#1A4A1A" stroke-width="4" stroke-linecap="round"/>
+    <path d="M450 389C450 389 432 416 432 430C432 445 440 455 450 455C460 455 468 445 468 430C468 416 450 389 450 389Z" fill="#2D7A2D"/>
+    <path d="M450 430V475" stroke="#1A4A1A" stroke-width="4" stroke-linecap="round"/>
+    <text x="450" y="522" text-anchor="middle" fill="#1A4A1A" font-family="Georgia,serif" font-size="39" font-weight="700">MẬT MÍA</text>
+    <text x="450" y="556" text-anchor="middle" fill="#1A4A1A" font-family="Nunito,Arial,sans-serif" font-size="20" font-weight="800" letter-spacing="4">TRÙM MÍA</text>
+    <path d="M389 578H511" stroke="#1A4A1A" stroke-width="3" stroke-linecap="round"/>
+    <text x="450" y="606" text-anchor="middle" fill="#1A4A1A" font-family="Nunito,Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="2">VỊ NGỌT XỨ TRẦM</text>
+    <path d="M359 674C410 691 493 693 541 676" stroke="#D69A48" stroke-opacity=".48" stroke-width="9" stroke-linecap="round"/>
+    <path d="M368 270C348 329 348 377 355 417" stroke="white" stroke-opacity=".72" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <text x="450" y="846" text-anchor="middle" fill="#1A4A1A" font-family="Nunito,Arial,sans-serif" font-size="24" font-weight="800" letter-spacing="3">MẬT MÍA · NHA TRANG - KHÁNH HÒA</text>
+</svg>

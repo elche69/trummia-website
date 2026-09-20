@@ -47,7 +47,7 @@ img {
 }
 
 .section {
-  padding: 96px 0;
+  padding: 82px 0;
 }
 
 .section-heading {
@@ -101,7 +101,7 @@ img {
   max-width: 900px;
   font-family: 'Baloo 2', cursive;
   color: var(--green-dark);
-  font-size: clamp(2.3rem, 4vw, 4rem);
+  font-size: clamp(2.05rem, 3.6vw, 3.45rem);
   line-height: 1.04;
   letter-spacing: -0.03em;
   text-shadow: 0 3px 12px rgba(21, 61, 32, 0.04);
@@ -130,7 +130,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 82px;
+  min-height: 72px;
   gap: 1rem;
 }
 
@@ -142,8 +142,8 @@ img {
 }
 
 .brand img {
-  width: 134px;
-  height: 134px;
+  width: 88px;
+  height: 88px;
   object-fit: contain;
   transform: scale(1.2);
   transform-origin: center;
@@ -168,7 +168,7 @@ img {
 .brand-text small,
 .brand-tagline {
   color: #e7f7e8;
-  font-size: 2.1rem;
+  font-size: 0.82rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -177,14 +177,14 @@ img {
 .brand-tagline {
   color: #f5d77a;
   letter-spacing: 0.14em;
-  font-size: 1.9rem;
+  font-size: 0.78rem;
   line-height: 1.06;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: 1rem;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.92);
 }
@@ -250,7 +250,7 @@ img {
 .hero {
   position: relative;
   overflow: hidden;
-  min-height: 820px;
+  min-height: 720px;
   display: flex;
   align-items: center;
   background-image:
@@ -273,8 +273,8 @@ img {
   display: grid;
   grid-template-columns: 1.12fr 0.88fr;
   align-items: center;
-  gap: 2.4rem;
-  padding: 90px 0 70px;
+  gap: 2rem;
+  padding: 70px 0 58px;
 }
 
 .hero-copy {
@@ -310,7 +310,7 @@ img {
 .hero-copy h1 {
   margin: 0;
   font-family: 'Baloo 2', cursive;
-  font-size: clamp(3.2rem, 5vw, 5.8rem);
+  font-size: clamp(3rem, 4.8vw, 5.2rem);
   line-height: 0.9;
   letter-spacing: -0.06em;
   color: #fff7d9;
@@ -320,7 +320,7 @@ img {
 
 .tagline {
   margin: 0.8rem 0 0.5rem;
-  font-size: clamp(1.48rem, 2vw, 2.3rem);
+  font-size: clamp(1.25rem, 1.8vw, 1.9rem);
   font-weight: 800;
   letter-spacing: -0.02em;
   max-width: 650px;
@@ -356,7 +356,7 @@ img {
 .description {
   max-width: 650px;
   color: rgba(255, 255, 255, 0.86);
-  font-size: 1.08rem;
+  font-size: 1rem;
   margin: 0 0 1.6rem;
   line-height: 1.8;
 }
@@ -738,7 +738,7 @@ img {
 .product-body h3 {
   margin: 0 0 0.45rem;
   font-family: 'Baloo 2', cursive;
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: var(--green-dark);
   line-height: 1;
 }
@@ -1290,22 +1290,17 @@ img {
   }
 
   .section {
-    padding: 70px 0;
+    padding: 58px 0;
   }
 
   .brand {
     gap: 0.55rem;
     min-width: 0;
   }
-
   .brand img {
-    width: 72px;
-    height: 72px;
+    width: 62px;
+    height: 62px;
     transform: scale(1);
-  }
-
-  .brand-text {
-    gap: 0.1rem;
   }
 
   .brand-name {
@@ -1315,8 +1310,7 @@ img {
 
   .brand-text small,
   .brand-tagline {
-    font-size: 0.78rem;
-    letter-spacing: 0.08em;
+    font-size: 0.66rem;
     line-height: 1.15;
   }
 
@@ -1345,10 +1339,18 @@ img {
 
   .nav-wrap {
     position: relative;
-    min-height: 76px;
+    min-height: 68px;
   }
 
-  .hero-inner,
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero-inner {
+    padding-top: 32px;
+    padding-bottom: 42px;
+  }
+
   .about-grid,
   .story-layout,
   .product-grid,
@@ -1363,14 +1365,6 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .hero {
-    min-height: 640px;
-  }
-
-  .hero-inner {
-    padding-top: 40px;
-  }
-
   .eyebrow {
     width: 100%;
     justify-content: center;
@@ -1381,12 +1375,12 @@ img {
   }
 
   .hero-copy h1 {
-    font-size: clamp(2.5rem, 13vw, 4.2rem);
+    font-size: clamp(2.35rem, 12vw, 3.6rem);
     line-height: 0.96;
   }
 
   .tagline {
-    font-size: 1.35rem;
+    font-size: 1.18rem;
   }
 
   .hero-badges span {
@@ -1395,7 +1389,8 @@ img {
   }
 
   .description {
-    font-size: 0.98rem;
+    font-size: 0.94rem;
+    line-height: 1.65;
   }
 
   .hero-actions {

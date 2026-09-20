@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Báo giá tham khảo chai nhựa cho Mật Mía Trùm Mía</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --green: #1a4a1a; --green-2: #2d7a2d; --gold: #f5c518; --cream: #fffde7; --ink: #1a2a1a; --line: #dfe7da; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: #eef3e9; font: 15px/1.55 Nunito, sans-serif; }
+    .sheet { max-width: 1120px; margin: 28px auto; padding: 44px 52px 48px; background: #fff; box-shadow: 0 16px 45px #1735161c; }
+    .topline { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; border-bottom: 4px solid var(--gold); padding-bottom: 22px; }
+    .brand { color: var(--green); font: 800 2.15rem/1 Baloo 2, cursive; }
+    .brand small { display: block; margin-top: 5px; color: var(--green-2); font: 800 .76rem/1 Nunito, sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+    .meta { text-align: right; color: #526252; font-size: .9rem; }
+    h1, h2, h3 { margin: 0; font-family: Baloo 2, cursive; color: var(--green); }
+    h1 { margin-top: 30px; font-size: clamp(2.2rem, 5vw, 3.8rem); line-height: .98; }
+    .lead { max-width: 780px; margin: 10px 0 30px; font-size: 1.05rem; }
+    .note { padding: 14px 18px; border-left: 5px solid var(--gold); background: var(--cream); }
+    .note strong { color: var(--green); }
+    .product-illustration { display: grid; grid-template-columns: minmax(220px, 360px) 1fr; align-items: center; gap: 34px; margin-top: 30px; padding: 20px; border: 1px solid var(--line); border-radius: 12px; background: linear-gradient(135deg, #fbfdf7, #f3f8ed); }
+    .product-illustration img { width: 100%; max-width: 360px; margin: auto; }
+    .product-illustration h2 { margin-bottom: 8px; font-size: 2rem; }
+    .product-illustration p { margin: 0 0 10px; }
+    .recommend { margin-top: 32px; }
+    .recommend h2 { margin-bottom: 14px; font-size: 2rem; }
+    .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .card { display: grid; grid-template-columns: 150px 1fr; gap: 18px; padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: #fbfdf9; }
+    .card h3 { font-size: 1.45rem; }
+    .card p { margin: 4px 0 10px; }
+    .tag { display: inline-block; padding: 3px 9px; border-radius: 999px; background: #e7f3e5; color: var(--green-2); font-size: .78rem; font-weight: 800; }
+    .bottle { min-height: 180px; display: grid; place-items: center; border-radius: 9px; background: linear-gradient(145deg, #f3f8ee, #e6efdf); }
+    .bottle svg { width: 112px; height: 170px; }
+    .price-table { width: 100%; margin-top: 28px; border-collapse: collapse; overflow: hidden; border: 1px solid var(--line); }
+    th, td { padding: 13px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { background: var(--green); color: white; font-size: .88rem; }
+    tr:last-child td { border-bottom: 0; }
+    td.price { color: var(--green); font-weight: 800; white-space: nowrap; }
+    .best td { background: #fff9d8; }
+    .total { font-size: 1.03rem; font-weight: 800; }
+    .supplier-table { width: 100%; margin-top: 28px; border-collapse: collapse; border: 1px solid var(--line); }
+    .supplier-table a { color: var(--green-2); font-weight: 800; text-decoration: underline; }
+    .supplier-table .selected td { background: #fff9d8; }
+    .supplier-heading { margin-top: 38px; margin-bottom: 8px; font-size: 2rem; }
+    .supplier-lead { margin: 0; }
+    .details { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 30px; }
+    .details section { padding: 20px; border-top: 3px solid var(--green-2); background: #f6faf3; }
+    .details h2 { margin-bottom: 8px; font-size: 1.35rem; }
+    ul { margin: 8px 0 0; padding-left: 20px; }
+    .footer { margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--line); color: #5a695a; font-size: .88rem; }
+    .print { position: fixed; right: 22px; bottom: 22px; padding: 11px 16px; border: 0; border-radius: 8px; background: var(--gold); color: var(--green); font: 800 .9rem Nunito, sans-serif; cursor: pointer; }
+    @media (max-width: 760px) {
+      .sheet { margin: 0; padding: 28px 18px 36px; }
+      .topline, .details { grid-template-columns: 1fr; display: grid; }
+      .meta { text-align: left; }
+      .cards { grid-template-columns: 1fr; }
+      .product-illustration { grid-template-columns: 1fr; gap: 10px; }
+      .product-illustration img { max-width: 280px; }
+      .card { grid-template-columns: 110px 1fr; padding: 12px; gap: 12px; }
+      .bottle { min-height: 150px; }
+      .bottle svg { width: 85px; height: 140px; }
+      .price-table { display: block; overflow-x: auto; white-space: nowrap; }
+      .supplier-table { display: block; overflow-x: auto; white-space: nowrap; }
+      th, td { min-width: 135px; }
+      .print { position: static; margin-top: 22px; }
+    }
+    @media print { body { background: #fff; } .sheet { max-width: none; margin: 0; padding: 18mm; box-shadow: none; } .print { display: none; } }
+  </style>
+</head>
+<body>
+  <main class="sheet">
+    <header class="topline">
+      <div class="brand">Trùm Mía<small>Vị ngọt xứ Trầm · Nha Trang - Khánh Hòa</small></div>
+      <div class="meta">BÁO GIÁ THAM KHẢO<br>Ngày lập: 18/09/2026<br>Mã: TM-CHAI-250-500</div>
+    </header>
+
+    <h1>Chai nhựa cho Mật Mía</h1>
+    <p class="lead">Đề xuất bao bì PET thực phẩm cho dòng Mật Mía Trùm Mía, ưu tiên hai quy cách bán lẻ <strong>250 ml</strong> và <strong>500 ml</strong>. Mẫu chai đứng, dễ cầm, dễ dán nhãn và phù hợp trưng bày tại cửa hàng.</p>
+    <div class="note"><strong>Lưu ý quan trọng:</strong> Đây là dự toán tham khảo để chọn mẫu và ngân sách ban đầu, chưa phải báo giá xác nhận của nhà cung cấp. Cần chốt lại giá theo số lượng, màu chai, loại nắp, khuôn chai, vận chuyển và VAT trước khi đặt hàng.</div>
+
+    <section class="product-illustration" aria-labelledby="illustration-title">
+      <img src="assets/products/minh-hoa-chai-mat-mia.svg" alt="Minh họa chai Mật Mía Trùm Mía chứa mật màu nâu hổ phách" />
+      <div>
+        <h2 id="illustration-title">Hình minh họa sản phẩm</h2>
+        <p>Phác thảo định hướng cho chai PET 250 ml hoặc 500 ml: mật mía màu hổ phách, nhãn vàng - xanh và nắp có vòng niêm phong.</p>
+        <span class="tag">Hình concept · cần thay bằng ảnh mẫu thật khi đặt hàng</span>
+      </div>
+    </section>
+
+    <section class="recommend">
+      <h2>Hai mẫu nên ưu tiên</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="bottle" aria-label="Hình minh họa chai PET 250 ml">
+            <svg viewBox="0 0 110 180" role="img" aria-label="Chai PET 250 ml màu trong"><path d="M42 16h26v18l8 10v106c0 9-6 14-14 14H48c-8 0-14-5-14-14V44l8-10z" fill="#d9eee0" stroke="#2d7a2d" stroke-width="2"/><path d="M42 16h26v12H42z" fill="#f5c518" stroke="#2d7a2d" stroke-width="2"/><path d="M37 78h36v47H37z" fill="#fffde7" stroke="#2d7a2d" stroke-width="1.5"/><text x="55" y="98" text-anchor="middle" font-size="8" font-family="Nunito" font-weight="700" fill="#1a4a1a">MẬT MÍA</text><text x="55" y="109" text-anchor="middle" font-size="6" font-family="Nunito" fill="#1a4a1a">TRÙM MÍA</text></svg>
+          </div>
+          <div><span class="tag">Khuyến nghị ra mắt</span><h3>PET trụ đứng · 250 ml</h3><p>Phù hợp dùng thử, làm quà nhỏ và bán tại quầy. Nên chọn nắp 28 mm có vòng niêm phong.</p><strong>Ngân sách dự kiến: 2.450 đ/chai</strong></div>
+        </article>
+        <article class="card">
+          <div class="bottle" aria-label="Hình minh họa chai PET 500 ml">
+            <svg viewBox="0 0 110 180" role="img" aria-label="Chai PET 500 ml màu trong"><path d="M39 13h32v22l9 11v104c0 10-7 16-16 16H46c-9 0-16-6-16-16V46l9-11z" fill="#d9eee0" stroke="#2d7a2d" stroke-width="2"/><path d="M39 13h32v13H39z" fill="#f5c518" stroke="#2d7a2d" stroke-width="2"/><path d="M31 76h48v51H31z" fill="#fffde7" stroke="#2d7a2d" stroke-width="1.5"/><text x="55" y="97" text-anchor="middle" font-size="8" font-family="Nunito" font-weight="700" fill="#1a4a1a">MẬT MÍA</text><text x="55" y="108" text-anchor="middle" font-size="6" font-family="Nunito" fill="#1a4a1a">TRÙM MÍA</text></svg>
+          </div>
+          <div><span class="tag">Quy cách chủ lực</span><h3>PET trụ đứng · 500 ml</h3><p>Phù hợp hộ gia đình và khách mua dùng thường xuyên. Dáng đứng tạo cảm giác đầy đặn trên kệ.</p><strong>Ngân sách dự kiến: 2.900 đ/chai</strong></div>
+        </article>
+      </div>
+    </section>
+
+    <table class="price-table">
+      <thead><tr><th>Phương án</th><th>Quy cách</th><th>Cấu hình đề xuất</th><th>Giá chai + nắp</th><th>Nhãn dự kiến</th><th>Thành tiền / 1.000 chai</th></tr></thead>
+      <tbody>
+        <tr class="best"><td><strong>A1 · Ưu tiên</strong></td><td>PET trong 250 ml</td><td>Chai đứng, cổ 28 mm, nắp vàng có vòng niêm phong</td><td class="price">1.750 đ</td><td>700 đ</td><td class="price total">2.450.000 đ</td></tr>
+        <tr class="best"><td><strong>A2 · Ưu tiên</strong></td><td>PET trong 500 ml</td><td>Chai đứng, cổ 28 mm, nắp vàng có vòng niêm phong</td><td class="price">2.100 đ</td><td>800 đ</td><td class="price total">2.900.000 đ</td></tr>
+        <tr><td>B1 · Cao cấp</td><td>PET màu hổ phách 250 ml</td><td>Giảm ánh sáng chiếu vào sản phẩm, hình ảnh premium hơn</td><td class="price">2.500 đ</td><td>700 đ</td><td class="price total">3.200.000 đ</td></tr>
+        <tr><td>B2 · Cao cấp</td><td>PET màu hổ phách 500 ml</td><td>Thân chai dày hơn, phù hợp bộ quà hoặc kênh đặc sản</td><td class="price">2.900 đ</td><td>800 đ</td><td class="price total">3.700.000 đ</td></tr>
+      </tbody>
+    </table>
+
+    <h2 class="supplier-heading">Nhà cung cấp đã kiểm tra</h2>
+    <p class="supplier-lead">Báo giá ở trên là dự toán chọn mẫu, chưa phải giá do các đơn vị dưới đây xác nhận. Anna Plastic là lựa chọn nên liên hệ đầu tiên vì có cùng dòng chai 250 ml và 500 ml.</p>
+    <table class="supplier-table">
+      <thead><tr><th>Nhà cung cấp</th><th>Mẫu phù hợp</th><th>Liên hệ</th><th>Số lượng tối thiểu</th><th>Đánh giá nhanh</th></tr></thead>
+      <tbody>
+        <tr class="selected"><td><strong>Anna Plastic</strong><br><a href="https://annaplasticvn.com/san-pham/chai-pet-vuong-250ml-330ml-500ml-co-f38/" target="_blank" rel="noopener noreferrer">Trang sản phẩm</a></td><td>PET vuông F38: 250 ml và 500 ml</td><td>0988 987 074<br>0971 964 918<br>0971 968 419<br>annaplasticvn@gmail.com</td><td><strong>Chưa công bố MOQ.</strong><br>Quy cách đóng gói: 250 ml = 260 chai/bành; 500 ml = 200 chai/bành.</td><td>Phù hợp nhất để hỏi mẫu và giá cho cả hai dung tích.</td></tr>
+        <tr><td><strong>Nhựa Hà Châu</strong><br><a href="https://chainhuapet.com/dia-chi-cung-cap-chai-nhua-pet-500ml-gia-si" target="_blank" rel="noopener noreferrer">Trang tham khảo</a></td><td>PET 500 ml; có nhận thiết kế chai theo yêu cầu số lượng lớn</td><td>0906 682 891<br>0962 650 791<br>nhuahachau@gmail.com</td><td><strong>Chưa công bố MOQ.</strong><br>Trang có nói hỗ trợ đơn số lượng lớn.</td><td>Phù hợp để đối chiếu giá chai 500 ml và hỏi thêm mẫu 250 ml.</td></tr>
+        <tr><td><strong>Bao bì Đức Phát</strong><br><a href="https://baobiducphat.com/san-pham/chai-nhua-pet-nuoc-suc-mieng/" target="_blank" rel="noopener noreferrer">Trang sản phẩm</a></td><td>PET 250 ml và 500 ml; nắp vặn</td><td>0383 999 299<br>0975 064 444<br>baobiducphat.com@gmail.com</td><td><strong>Từ 5.000 chai</strong> theo thông tin công khai trên website.</td><td>Phù hợp khi Trùm Mía đặt sản lượng lớn; không tối ưu cho lô thử 1.000 chai.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="details">
+      <section><h2>Điều kiện dự toán</h2><ul><li>Số lượng tham chiếu: 1.000 chai mỗi quy cách.</li><li>Giá đã cộng nắp và nhãn giấy cơ bản; chưa gồm VAT, vận chuyển, thùng carton và chi phí thiết kế/in thử.</li><li>MOQ thực tế có thể thay đổi theo màu chai và nhà cung cấp.</li><li>Đề nghị lấy mẫu thật để kiểm tra độ kín, khả năng rót và độ bám nhãn.</li></ul></section>
+      <section><h2>Checklist chốt mẫu</h2><ul><li>Nhựa PET nguyên sinh, đạt yêu cầu tiếp xúc thực phẩm.</li><li>Nắp vặn có vòng niêm phong; thử úp ngược 24 giờ.</li><li>Kiểm tra chai không móp khi xếp thùng và vận chuyển.</li><li>Chốt màu nhãn vàng - xanh theo nhận diện Trùm Mía.</li></ul></section>
+    </div>
+
+    <footer class="footer"><strong>Khuyến nghị đặt mẫu:</strong> thử trước 10-20 chai mỗi loại A1 và A2. Với sản phẩm mật mía, tôi nghiêng về PET trong 250 ml để ra mắt và PET trong 500 ml làm quy cách chủ lực; chỉ chuyển sang PET hổ phách khi thử nghiệm cho thấy cần giảm ánh sáng hoặc muốn định vị quà tặng. Hình chai trên trang là hình minh họa kiểu dáng, cần thay bằng ảnh mẫu thật khi nhận báo giá chính thức.</footer>
+    <button class="print" type="button" onclick="window.print()">In / lưu PDF</button>
+  </main>
+</body>
+</html>
