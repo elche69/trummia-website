@@ -65,6 +65,104 @@
   min-height: 44px;
 }
 
+.chat-actions {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.55rem 0.7rem;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(26, 74, 26, 0.12);
+}
+
+.chat-actions[hidden],
+.chat-log[hidden],
+.chat-form[hidden],
+.lead-form[hidden] {
+  display: none;
+}
+
+.chat-zalo,
+.chat-order {
+  flex: 1;
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.6rem;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+}
+
+.chat-zalo {
+  background: #0068ff;
+  color: #ffffff;
+}
+
+.chat-order {
+  background: #f5c518;
+  color: #1a4a1a;
+}
+
+.lead-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  overflow-y: auto;
+  background: #fffde7;
+}
+
+.lead-form input,
+.lead-form textarea {
+  font: inherit;
+  font-size: 16px;
+  min-height: 42px;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid rgba(26, 74, 26, 0.25);
+  border-radius: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.lead-form small {
+  color: #1a2a1a;
+  opacity: 0.75;
+}
+
+.lead-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lead-buttons button {
+  flex: 1;
+  min-height: 44px;
+  border: 0;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#leadBack {
+  background: #e7f7e8;
+  color: #1a4a1a;
+}
+
+#leadSubmit {
+  background: #1a4a1a;
+  color: #ffffff;
+}
+
+#leadSubmit:disabled {
+  opacity: 0.5;
+}
+
 .chat-log {
   flex: 1;
   overflow-y: auto;

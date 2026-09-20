@@ -1,14 +1,55 @@
 (function () {
   var ENDPOINT = 'https://trummia-chat.tigernguyen0412.workers.dev';
   var HOTLINE = '0923.29.79.39';
+  var ZALO_URL = 'https://zalo.me/0923297939';
   var MAX_LEN = 500;
 
   var L = {
-    vi: { title: 'Trùm Mía hỗ trợ', open: 'Chat với Trùm Mía', close: 'Đóng chat', placeholder: 'Nhập câu hỏi của bạn...', send: 'Gửi', typing: 'Đang trả lời...', hello: 'Xin chào anh/chị! Em là trợ lý của Trùm Mía. Em có thể giúp gì cho mình ạ?', error: 'Xin lỗi, hiện em chưa trả lời được. Anh/chị vui lòng gọi hoặc nhắn Zalo ' + HOTLINE + ' giúp em nhé.' },
-    en: { title: 'Trùm Mía support', open: 'Chat with Trùm Mía', close: 'Close chat', placeholder: 'Type your question...', send: 'Send', typing: 'Typing...', hello: 'Hello! I am the Trùm Mía assistant. How can I help you?', error: 'Sorry, I cannot answer right now. Please call or message us on Zalo at ' + HOTLINE + '.' },
-    ko: { title: 'Trùm Mía 문의', open: 'Trùm Mía와 채팅', close: '채팅 닫기', placeholder: '질문을 입력하세요...', send: '보내기', typing: '답변 중...', hello: '안녕하세요! Trùm Mía 도우미입니다. 무엇을 도와드릴까요?', error: '죄송합니다. 지금은 답변드리기 어렵습니다. ' + HOTLINE + ' 로 전화 또는 Zalo 메시지를 남겨 주세요.' },
-    ru: { title: 'Поддержка Trùm Mía', open: 'Чат с Trùm Mía', close: 'Закрыть чат', placeholder: 'Введите вопрос...', send: 'Отправить', typing: 'Печатает...', hello: 'Здравствуйте! Я помощник Trùm Mía. Чем могу помочь?', error: 'Извините, сейчас я не могу ответить. Позвоните или напишите в Zalo: ' + HOTLINE + '.' },
-    zh: { title: 'Trùm Mía 客服', open: '与 Trùm Mía 聊天', close: '关闭聊天', placeholder: '请输入您的问题...', send: '发送', typing: '正在回复...', hello: '您好！我是 Trùm Mía 的助手，有什么可以帮您？', error: '抱歉，暂时无法回复。请致电或通过 Zalo 联系 ' + HOTLINE + '。' }
+    vi: {
+      title: 'Trùm Mía hỗ trợ', open: 'Chat với Trùm Mía', close: 'Đóng chat', placeholder: 'Nhập câu hỏi của bạn...', send: 'Gửi', typing: 'Đang trả lời...',
+      hello: 'Xin chào anh/chị! Em là trợ lý của Trùm Mía. Em có thể giúp gì cho mình ạ?',
+      error: 'Xin lỗi, hiện em chưa trả lời được. Anh/chị vui lòng gọi hoặc nhắn Zalo ' + HOTLINE + ' giúp em nhé.',
+      zalo: 'Nhắn Zalo', order: 'Đặt hàng / để lại SĐT', formTitle: 'Để lại thông tin, nhân viên sẽ liên hệ',
+      name: 'Họ tên *', phone: 'Số điện thoại *', product: 'Sản phẩm và số lượng', address: 'Địa chỉ nhận hàng', note: 'Ghi chú',
+      consent: 'Thông tin chỉ dùng để tư vấn và giao hàng.', submit: 'Gửi thông tin', back: 'Quay lại chat',
+      sent: 'Trùm Mía đã nhận thông tin. Nhân viên sẽ liên hệ với anh/chị sớm nhất ạ!', failed: 'Chưa gửi được. Anh/chị vui lòng gọi hoặc nhắn Zalo ' + HOTLINE + ' giúp em nhé.', badPhone: 'Vui lòng nhập họ tên và số điện thoại hợp lệ.'
+    },
+    en: {
+      title: 'Trùm Mía support', open: 'Chat with Trùm Mía', close: 'Close chat', placeholder: 'Type your question...', send: 'Send', typing: 'Typing...',
+      hello: 'Hello! I am the Trùm Mía assistant. How can I help you?',
+      error: 'Sorry, I cannot answer right now. Please call or message us on Zalo at ' + HOTLINE + '.',
+      zalo: 'Message on Zalo', order: 'Order / leave your phone', formTitle: 'Leave your details and our staff will contact you',
+      name: 'Full name *', phone: 'Phone number *', product: 'Products and quantity', address: 'Delivery address', note: 'Note',
+      consent: 'Your details are used only for advice and delivery.', submit: 'Send details', back: 'Back to chat',
+      sent: 'Trùm Mía has received your details. Our staff will contact you soon!', failed: 'Could not send. Please call or message us on Zalo at ' + HOTLINE + '.', badPhone: 'Please enter a valid name and phone number.'
+    },
+    ko: {
+      title: 'Trùm Mía 문의', open: 'Trùm Mía와 채팅', close: '채팅 닫기', placeholder: '질문을 입력하세요...', send: '보내기', typing: '답변 중...',
+      hello: '안녕하세요! Trùm Mía 도우미입니다. 무엇을 도와드릴까요?',
+      error: '죄송합니다. 지금은 답변드리기 어렵습니다. ' + HOTLINE + ' 로 전화 또는 Zalo 메시지를 남겨 주세요.',
+      zalo: 'Zalo 메시지', order: '주문 / 연락처 남기기', formTitle: '정보를 남겨 주시면 직원이 연락드립니다',
+      name: '이름 *', phone: '전화번호 *', product: '제품 및 수량', address: '배송 주소', note: '메모',
+      consent: '입력하신 정보는 상담 및 배송 목적으로만 사용됩니다.', submit: '정보 보내기', back: '채팅으로 돌아가기',
+      sent: 'Trùm Mía가 정보를 받았습니다. 직원이 곧 연락드리겠습니다!', failed: '전송하지 못했습니다. ' + HOTLINE + ' 로 전화 또는 Zalo 메시지를 남겨 주세요.', badPhone: '이름과 올바른 전화번호를 입력해 주세요.'
+    },
+    ru: {
+      title: 'Поддержка Trùm Mía', open: 'Чат с Trùm Mía', close: 'Закрыть чат', placeholder: 'Введите вопрос...', send: 'Отправить', typing: 'Печатает...',
+      hello: 'Здравствуйте! Я помощник Trùm Mía. Чем могу помочь?',
+      error: 'Извините, сейчас я не могу ответить. Позвоните или напишите в Zalo: ' + HOTLINE + '.',
+      zalo: 'Написать в Zalo', order: 'Заказ / оставить телефон', formTitle: 'Оставьте данные, и сотрудник свяжется с вами',
+      name: 'Имя *', phone: 'Телефон *', product: 'Продукция и количество', address: 'Адрес доставки', note: 'Комментарий',
+      consent: 'Данные используются только для консультации и доставки.', submit: 'Отправить данные', back: 'Вернуться в чат',
+      sent: 'Trùm Mía получил ваши данные. Сотрудник скоро свяжется с вами!', failed: 'Не удалось отправить. Позвоните или напишите в Zalo: ' + HOTLINE + '.', badPhone: 'Введите имя и корректный номер телефона.'
+    },
+    zh: {
+      title: 'Trùm Mía 客服', open: '与 Trùm Mía 聊天', close: '关闭聊天', placeholder: '请输入您的问题...', send: '发送', typing: '正在回复...',
+      hello: '您好！我是 Trùm Mía 的助手，有什么可以帮您？',
+      error: '抱歉，暂时无法回复。请致电或通过 Zalo 联系 ' + HOTLINE + '。',
+      zalo: 'Zalo 留言', order: '下单 / 留下电话', formTitle: '留下您的信息，我们的工作人员会联系您',
+      name: '姓名 *', phone: '电话号码 *', product: '产品及数量', address: '收货地址', note: '备注',
+      consent: '您的信息仅用于咨询和配送。', submit: '提交信息', back: '返回聊天',
+      sent: 'Trùm Mía 已收到您的信息，工作人员会尽快与您联系！', failed: '发送失败。请致电或通过 Zalo 联系 ' + HOTLINE + '。', badPhone: '请输入有效的姓名和电话号码。'
+    }
   };
 
   function lang() {
@@ -28,20 +69,42 @@
     '<button type="button" class="chat-fab" id="chatFab"><span aria-hidden="true">💬</span></button>' +
     '<section class="chat-panel" id="chatPanel" hidden>' +
     '<header class="chat-head"><strong id="chatTitle"></strong><button type="button" class="chat-close" id="chatClose">×</button></header>' +
+    '<div class="chat-actions"><a class="chat-zalo" id="chatZalo" target="_blank" rel="noopener noreferrer"></a>' +
+    '<button type="button" class="chat-order" id="chatOrder"></button></div>' +
     '<div class="chat-log" id="chatLog" role="log" aria-live="polite"></div>' +
     '<form class="chat-form" id="chatForm"><input type="text" id="chatInput" maxlength="' + MAX_LEN + '" autocomplete="off" />' +
-    '<button type="submit" id="chatSend"></button></form></section>';
+    '<button type="submit" id="chatSend"></button></form>' +
+    '<form class="lead-form" id="leadForm" hidden>' +
+    '<strong id="leadTitle"></strong>' +
+    '<input type="text" id="leadName" maxlength="100" autocomplete="name" />' +
+    '<input type="tel" id="leadPhone" maxlength="20" autocomplete="tel" />' +
+    '<input type="text" id="leadProduct" maxlength="200" />' +
+    '<input type="text" id="leadAddress" maxlength="250" autocomplete="street-address" />' +
+    '<textarea id="leadNote" maxlength="500" rows="2"></textarea>' +
+    '<small id="leadConsent"></small>' +
+    '<div class="lead-buttons"><button type="button" id="leadBack"></button><button type="submit" id="leadSubmit"></button></div>' +
+    '</form></section>';
   document.body.appendChild(root);
 
-  var fab = document.getElementById('chatFab');
-  var panel = document.getElementById('chatPanel');
-  var log = document.getElementById('chatLog');
-  var form = document.getElementById('chatForm');
-  var input = document.getElementById('chatInput');
-  var send = document.getElementById('chatSend');
-  var closeBtn = document.getElementById('chatClose');
-  var title = document.getElementById('chatTitle');
+  function $(id) {
+    return document.getElementById(id);
+  }
+  var fab = $('chatFab');
+  var panel = $('chatPanel');
+  var log = $('chatLog');
+  var form = $('chatForm');
+  var input = $('chatInput');
+  var send = $('chatSend');
+  var closeBtn = $('chatClose');
+  var title = $('chatTitle');
+  var zalo = $('chatZalo');
+  var orderBtn = $('chatOrder');
+  var actions = root.querySelector('.chat-actions');
+  var lead = $('leadForm');
+  var leadFields = { name: $('leadName'), phone: $('leadPhone'), product: $('leadProduct'), address: $('leadAddress'), note: $('leadNote') };
   var greeting = null;
+
+  zalo.href = ZALO_URL;
 
   function setText(el, text) {
     var clean = String(text)
@@ -83,7 +146,26 @@
     input.placeholder = t('placeholder');
     input.setAttribute('aria-label', t('placeholder'));
     send.textContent = t('send');
-    if (greeting && !history.length) greeting.textContent = t('hello');
+    zalo.textContent = t('zalo');
+    orderBtn.textContent = t('order');
+    $('leadTitle').textContent = t('formTitle');
+    ['name', 'phone', 'product', 'address', 'note'].forEach(function (k) {
+      leadFields[k].placeholder = t(k);
+      leadFields[k].setAttribute('aria-label', t(k));
+    });
+    $('leadConsent').textContent = t('consent');
+    $('leadBack').textContent = t('back');
+    $('leadSubmit').textContent = t('submit');
+    if (greeting && !history.length) setText(greeting, t('hello'));
+  }
+
+  function showLead(show) {
+    lead.hidden = !show;
+    log.hidden = show;
+    form.hidden = show;
+    actions.hidden = show;
+    if (show) leadFields.name.focus();
+    else input.focus();
   }
 
   function openChat() {
@@ -102,11 +184,57 @@
 
   fab.addEventListener('click', openChat);
   closeBtn.addEventListener('click', closeChat);
+  orderBtn.addEventListener('click', function () {
+    showLead(true);
+  });
+  $('leadBack').addEventListener('click', function () {
+    showLead(false);
+  });
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && !panel.hidden) closeChat();
   });
   new MutationObserver(labels).observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
   labels();
+
+  lead.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = leadFields.name.value.trim();
+    var phone = leadFields.phone.value.trim();
+    if (!name || !/^\+?[0-9 .()-]{8,20}$/.test(phone)) {
+      window.alert(t('badPhone'));
+      return;
+    }
+    var submit = $('leadSubmit');
+    submit.disabled = true;
+    fetch(ENDPOINT + '/lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: name,
+        phone: phone,
+        product: leadFields.product.value,
+        address: leadFields.address.value,
+        note: leadFields.note.value,
+        messages: history,
+        lang: lang()
+      })
+    })
+      .then(function (res) {
+        if (!res.ok) throw new Error('bad status');
+        Object.keys(leadFields).forEach(function (k) {
+          leadFields[k].value = '';
+        });
+        showLead(false);
+        addBubble('bot', t('sent'));
+      })
+      .catch(function () {
+        showLead(false);
+        addBubble('bot', t('failed'));
+      })
+      .then(function () {
+        submit.disabled = false;
+      });
+  });
 
   form.addEventListener('submit', function (e) {
     e.preventDefault();
