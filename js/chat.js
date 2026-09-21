@@ -6,7 +6,7 @@
 
   var L = {
     vi: {
-      title: 'Trùm Mía hỗ trợ', open: 'Chat với Trùm Mía', close: 'Đóng chat', placeholder: 'Nhập câu hỏi của bạn...', send: 'Gửi', typing: 'Đang trả lời...',
+      title: 'Trợ Lí Bán Hàng Trùm Mía', open: 'Chat với Trợ Lí Bán Hàng Trùm Mía', close: 'Đóng chat', placeholder: 'Nhập câu hỏi của bạn...', send: 'Gửi', typing: 'Đang trả lời...',
       hello: 'Xin chào anh/chị! Em là trợ lý của Trùm Mía. Em có thể giúp gì cho mình ạ?',
       error: 'Xin lỗi, hiện em chưa trả lời được. Anh/chị vui lòng gọi hoặc nhắn Zalo ' + HOTLINE + ' giúp em nhé.',
       zalo: 'Nhắn Zalo', order: 'Đặt hàng / để lại SĐT', formTitle: 'Để lại thông tin, nhân viên sẽ liên hệ',
@@ -15,7 +15,7 @@
       sent: 'Trùm Mía đã nhận thông tin. Nhân viên sẽ liên hệ với anh/chị sớm nhất ạ!', failed: 'Chưa gửi được. Anh/chị vui lòng gọi hoặc nhắn Zalo ' + HOTLINE + ' giúp em nhé.', badPhone: 'Vui lòng nhập họ tên và số điện thoại hợp lệ (10 số, bắt đầu bằng 0).'
     },
     en: {
-      title: 'Trùm Mía support', open: 'Chat with Trùm Mía', close: 'Close chat', placeholder: 'Type your question...', send: 'Send', typing: 'Typing...',
+      title: 'Trùm Mía Sales Assistant', open: 'Chat with the Trùm Mía Sales Assistant', close: 'Close chat', placeholder: 'Type your question...', send: 'Send', typing: 'Typing...',
       hello: 'Hello! I am the Trùm Mía assistant. How can I help you?',
       error: 'Sorry, I cannot answer right now. Please call or message us on Zalo at ' + HOTLINE + '.',
       zalo: 'Message on Zalo', order: 'Order / leave your phone', formTitle: 'Leave your details and our staff will contact you',
@@ -24,7 +24,7 @@
       sent: 'Trùm Mía has received your details. Our staff will contact you soon!', failed: 'Could not send. Please call or message us on Zalo at ' + HOTLINE + '.', badPhone: 'Please enter your name and a valid phone number (10 digits starting with 0, or +country code).'
     },
     ko: {
-      title: 'Trùm Mía 문의', open: 'Trùm Mía와 채팅', close: '채팅 닫기', placeholder: '질문을 입력하세요...', send: '보내기', typing: '답변 중...',
+      title: 'Trùm Mía 판매 도우미', open: 'Trùm Mía 판매 도우미와 채팅', close: '채팅 닫기', placeholder: '질문을 입력하세요...', send: '보내기', typing: '답변 중...',
       hello: '안녕하세요! Trùm Mía 도우미입니다. 무엇을 도와드릴까요?',
       error: '죄송합니다. 지금은 답변드리기 어렵습니다. ' + HOTLINE + ' 로 전화 또는 Zalo 메시지를 남겨 주세요.',
       zalo: 'Zalo 메시지', order: '주문 / 연락처 남기기', formTitle: '정보를 남겨 주시면 직원이 연락드립니다',
@@ -33,7 +33,7 @@
       sent: 'Trùm Mía가 정보를 받았습니다. 직원이 곧 연락드리겠습니다!', failed: '전송하지 못했습니다. ' + HOTLINE + ' 로 전화 또는 Zalo 메시지를 남겨 주세요.', badPhone: '이름과 올바른 전화번호를 입력해 주세요 (국가번호 포함 가능).'
     },
     ru: {
-      title: 'Поддержка Trùm Mía', open: 'Чат с Trùm Mía', close: 'Закрыть чат', placeholder: 'Введите вопрос...', send: 'Отправить', typing: 'Печатает...',
+      title: 'Помощник по продажам Trùm Mía', open: 'Чат с помощником по продажам Trùm Mía', close: 'Закрыть чат', placeholder: 'Введите вопрос...', send: 'Отправить', typing: 'Печатает...',
       hello: 'Здравствуйте! Я помощник Trùm Mía. Чем могу помочь?',
       error: 'Извините, сейчас я не могу ответить. Позвоните или напишите в Zalo: ' + HOTLINE + '.',
       zalo: 'Написать в Zalo', order: 'Заказ / оставить телефон', formTitle: 'Оставьте данные, и сотрудник свяжется с вами',
@@ -42,7 +42,7 @@
       sent: 'Trùm Mía получил ваши данные. Сотрудник скоро свяжется с вами!', failed: 'Не удалось отправить. Позвоните или напишите в Zalo: ' + HOTLINE + '.', badPhone: 'Введите имя и корректный номер телефона (с кодом страны, например +7...).'
     },
     zh: {
-      title: 'Trùm Mía 客服', open: '与 Trùm Mía 聊天', close: '关闭聊天', placeholder: '请输入您的问题...', send: '发送', typing: '正在回复...',
+      title: 'Trùm Mía 销售助手', open: '与 Trùm Mía 销售助手聊天', close: '关闭聊天', placeholder: '请输入您的问题...', send: '发送', typing: '正在回复...',
       hello: '您好！我是 Trùm Mía 的助手，有什么可以帮您？',
       error: '抱歉，暂时无法回复。请致电或通过 Zalo 联系 ' + HOTLINE + '。',
       zalo: 'Zalo 留言', order: '下单 / 留下电话', formTitle: '留下您的信息，我们的工作人员会联系您',
